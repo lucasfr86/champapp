@@ -1,0 +1,153 @@
+:root {
+	--color-ppal: #000;
+	--color-detalles: #ffbb00ce;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.card {
+	height: 100%;
+}
+.card .card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card .card-body .btn:hover {
+	background-color: var(--color-detalles);
+	border-color: var(--color-detalles);
+}
+
+footer {
+	background-color: var(--color-ppal) !important;
+	position: sticky;
+	bottom: 0;
+	z-index: 150;
+}
+
+.content-nav {
+	background-color: var(--color-ppal) !important;
+}
+
+.content-nav .logo-text {
+	color: #fff;
+	text-decoration: none;
+}
+footer,
+footer a,
+.content-nav .links-nav,
+.content-nav .links-nav a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 6px;
+}
+
+footer a:hover,
+.content-nav a:hover {
+	color: var(--color-detalles);
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 5px 23px -2px rgba(0, 0, 0, 0.49);
+	-moz-box-shadow: 0px 5px 23px -2px rgba(0, 0, 0, 0.49);
+	box-shadow: 0px 5px 23px -2px rgba(0, 0, 0, 0.49);
+}
+
+.contentBuscador {
+	position: relative;
+}
+
+.contentBuscador .list-group {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+}
+
+.contentBuscador .list-group .list-group-item {
+	background-color: #fff;
+}
+
+.contentBuscador .list-group .list-group-item:hover {
+	background-color: var(--color-ppal);
+}
+
+.contentBuscador .list-group .list-group-item .linkChamp {
+	float: left;
+	width: 100%;
+	color: var(--color-ppal);
+	text-decoration: none;
+}
+
+.contentBuscador .list-group .list-group-item .linkChamp:hover {
+	color: #fff;
+}
+
+.spanModes {
+	text-transform: lowercase;
+}
+
+.carousel-caption {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto;
+	max-width: 400px;
+	border-top: 1px solid var(--color-detalles);
+	border-bottom: 1px solid var(--color-detalles);
+}
+
+.carousel-caption p {
+	margin: 0;
+}
+
+.carousel-control-prev {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.75+50,0+100 */
+	background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.carousel-control-next {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.75+50 */
+	background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.75) 100%) !important; /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.75) 100%) !important; /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.75) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=1 ); /* IE6-9 */
+}
+
+.card {
+	overflow: hidden;
+}
+.card .card-body {
+	position: absolute;
+	bottom: -100px;
+	width: 100%;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+25 */
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+.card .card-body .card-title,
+.card .card-body p {
+	color: #fff;
+}
+
+.card:hover .card-body {
+	bottom: 0;
+}
